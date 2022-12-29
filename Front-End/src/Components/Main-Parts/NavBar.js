@@ -20,7 +20,7 @@ const Header = () => {
     return (
         <MDBNavbar fixed='top' expand='lg' dark bgColor='dark'>
             <MDBContainer fluid className='d-flex align-items-end '>
-                <img src={logo} alt={'logo'} className='w-7 rounded' />
+                <img src={logo} alt={'logo'} className='w-5 rounded' />
                 <MDBNavbarToggler
                     type='button'
                     data-target='#navbarColor02'
@@ -53,10 +53,16 @@ const Header = () => {
                         </MDBNavbarItem>
                         <div className='position-absolute bottom-0 end-0 mb-4'>
                             <MDBBtn href='#' tag='a' color='transparent' className='shadow-0'>
+                                <div className='position-relative'>
                                 <MDBIcon far icon="envelope" color='success' />
+                                <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle"></span>
+                                </div>
                             </MDBBtn>
                             <MDBBtn href='#' tag='a' color='transparent' className='shadow-0'>
                                 <MDBIcon fas icon="sign-in-alt" color='success' />
+                            </MDBBtn>
+                            <MDBBtn href='#' tag='a' color='transparent' className='rounded-circle shadow-0'>
+                                <img className="rounded-circle shadow-4-strong w-3 mb-1" alt="avatar" src="https://mdbcdn.b-cdn.net/img/new/avatars/1.webp" />
                             </MDBBtn>
                         </div>
                     </MDBNavbarNav>
