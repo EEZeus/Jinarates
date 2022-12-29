@@ -33,36 +33,36 @@ const Header = () => {
                 </MDBNavbarToggler>
                 <MDBCollapse show={showNavColorSecond} navbar id='navbarColor02'>
                     <MDBNavbarNav className='me-auto mb-lg-0 position-relative'>
-                        <MDBNavbarItem className='active mb-4'>
+                        <MDBNavbarItem className='active mb-4 '>
                             <MDBNavbarLink aria-current='page' href='#' >
                                 <MDBIcon fas icon="home" color='success' className='mx-1' />
                                 <span>Home</span>
                             </MDBNavbarLink>
                         </MDBNavbarItem>
-                        <MDBNavbarItem className=' mb-4'>
+                        <MDBNavbarItem className=' mb-4 '>
                             <MDBNavbarLink href='#'>
                                 <MDBIcon fas icon="search" color='success' className='mx-1' />
                                 <span>Explore</span>
                             </MDBNavbarLink>
                         </MDBNavbarItem>
-                        <MDBNavbarItem className=' mb-4'>
+                        <MDBNavbarItem className=' mb-4 '>
                             <MDBNavbarLink href='#'>
                                 <MDBIcon fas icon="info-circle" color='success' className='mx-1' />
                                 <span>About us</span>
                             </MDBNavbarLink>
                         </MDBNavbarItem>
-                        <div className='position-absolute bottom-0 end-0 mb-4'>
-                            <MDBBtn href='#' tag='a' color='transparent' className='shadow-0'>
+                        <div className='position-absolute bottom-0 end-0 mb-0'>
+                            <MDBBtn href='#' tag='a' color='transparent' className='shadow-0 mb-0'>
                                 <div className='position-relative'>
                                 <MDBIcon far icon="envelope" color='success' />
                                 <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle"></span>
                                 </div>
                             </MDBBtn>
-                            <MDBBtn href='#' tag='a' color='transparent' className='shadow-0'>
+                            <MDBBtn href='#' tag='a' color='transparent' className='shadow-0 mb-0'>
                                 <MDBIcon fas icon="sign-in-alt" color='success' />
                             </MDBBtn>
-                            <MDBBtn href='#' tag='a' color='transparent' className='rounded-circle shadow-0'>
-                                <img className="rounded-circle shadow-4-strong w-3 mb-1" alt="avatar" src="https://mdbcdn.b-cdn.net/img/new/avatars/1.webp" />
+                            <MDBBtn href='#' tag='a' color='transparent' className='rounded-circle shadow-0 mb-4'>
+                                <img className="rounded-circle w-3 mb-0" alt="avatar" src="https://mdbcdn.b-cdn.net/img/new/avatars/1.webp" />
                             </MDBBtn>
                         </div>
                     </MDBNavbarNav>
