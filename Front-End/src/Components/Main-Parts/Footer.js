@@ -11,11 +11,11 @@ import {
 } from 'mdb-react-ui-kit';
 
 const Footer = () => {
-  return (<MDBFooter className='w-100 position-absolute bottom-0 end-0 bg-dark bg-gradient text-white'>
-    <MDBContainer className='position-relative'>
+  return (<MDBFooter className='position-relative w-100 bg-dark bg-gradient text-white'>
+    <MDBContainer>
       <MDBRow>
         <MDBCol lg="6" md="12" className=' mt-mb-0 '>
-          <img src={logo} alt={'logo'} className="rounded w-25"/>
+          <img src={logo} alt={'logo'} className="rounded w-6"/>
         </MDBCol>
 
         <MDBCol lg="3" md="6" className=' mb-md-0'>
@@ -48,8 +48,7 @@ const Footer = () => {
           </ul>
         </MDBCol>
       </MDBRow>
-    </MDBContainer>
-    <div className="position-absolute bottom-0 end-0">
+      <div className="position-absolute bottom-0 end-0">
       <MDBBtn className='bg-gradient m-1' size='sm' tag='a' color='dark' >
         <MDBIcon fab icon='twitter' />
       </MDBBtn>
@@ -58,6 +57,7 @@ const Footer = () => {
       </MDBBtn>
 
     </div>
+    </MDBContainer>
   </MDBFooter>
   );
 };

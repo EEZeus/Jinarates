@@ -13,14 +13,14 @@ import {
     MDBCollapse,
     MDBBtn
 } from 'mdb-react-ui-kit';
-const Header = () => {
+const Navbar = () => {
     const [showNavColor, setShowNavColor] = useState(false);
     const [showNavColorSecond, setShowNavColorSecond] = useState(false);
     const [showNavColorThird, setShowNavColorThird] = useState(false);
     return (
-        <MDBNavbar fixed='top' expand='lg' dark bgColor='dark'>
+        <MDBNavbar expand='lg' dark bgColor='dark' className='bg-gradient mt-0'>
             <MDBContainer fluid className='d-flex align-items-end '>
-                <img src={logo} alt={'logo'} className='w-5 rounded' />
+                <img src={logo} alt={'logo'} className='w-3 rounded' />
                 <MDBNavbarToggler
                     type='button'
                     data-target='#navbarColor02'
@@ -36,19 +36,19 @@ const Header = () => {
                         <MDBNavbarItem className='active mb-4 '>
                             <MDBNavbarLink aria-current='page' href='#' >
                                 <MDBIcon fas icon="home" color='success' className='mx-1' />
-                                <span>Home</span>
+                                <span className='text-white'>Home</span>
                             </MDBNavbarLink>
                         </MDBNavbarItem>
                         <MDBNavbarItem className=' mb-4 '>
                             <MDBNavbarLink href='#'>
                                 <MDBIcon fas icon="search" color='success' className='mx-1' />
-                                <span>Explore</span>
+                                <span className='text-white'>Explore</span>
                             </MDBNavbarLink>
                         </MDBNavbarItem>
                         <MDBNavbarItem className=' mb-4 '>
                             <MDBNavbarLink href='#'>
                                 <MDBIcon fas icon="info-circle" color='success' className='mx-1' />
-                                <span>About us</span>
+                                <span className='text-white'>About us</span>
                             </MDBNavbarLink>
                         </MDBNavbarItem>
                         <div className='position-absolute bottom-0 end-0 mb-0'>
@@ -71,4 +71,4 @@ const Header = () => {
         </MDBNavbar>
     )
 }
-export default Header
+export default Navbar
