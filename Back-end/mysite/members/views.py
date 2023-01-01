@@ -32,3 +32,8 @@ def register_user(request):
     else:
         form = UserCreationForm()
     return render(request, 'authenticate/register_user.html', {'form':form})
+
+def logout_user (request):
+    logout(request)
+    messages.success(request, "user logged out succussfully")
+    return redirect('login')
