@@ -1,4 +1,5 @@
 *.log
+*.pyc
 *.sqlite3
 Back-end/mysite/mysite/__pycache__/
-
+Back-end/mysite/members/__pycache__/
