@@ -1,8 +1,7 @@
 import React from 'react'
 import './CoursePageHeader.css'
 import logo from '../../../Assets/logo-black.png'
-const checked = 's'
-const Header = () => {
+const CoursePageHeader = () => {
     return (
         <div class="container-md d-flex flex bg-success mw-100 mx-0 px-0  position-relative">
             <div class="container text-left mx-0 px-0 text-white w-100 ">
@@ -30,7 +29,7 @@ const Header = () => {
                     </div>
 
                     <div class="col mt-4 ml-4 pl-4">
-                    <button type="button" className="position-absolute end-0 top-0 m-4 btn btn-dark bg-gradient btn-sm">Edit</button>
+                    <button type="button" className="position-absolute end-0 top-0 m-1 btn btn-dark bg-gradient btn-sm">Edit</button>
                     </div>
 
                 </div>
@@ -39,4 +38,4 @@ const Header = () => {
     );
 }
 
-export default Header;
+export default CoursePageHeader;
