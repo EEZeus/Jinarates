@@ -1,17 +1,18 @@
 import React from 'react'
 import './CoursePageHeader.css'
+import logo from '../../../Assets/logo-black.png'
 const checked = 's'
 const Header = () => {
     return (
-        <div class="container-md d-flex flex bg-gradient bg-success mw-100 mx-0 px-0">
-            <div class="container text-left mx-0 px-0 text-white">
-                <div class="row">
+        <div class="container-md d-flex flex bg-success mw-100 mx-0 px-0  position-relative">
+            <div class="container text-left mx-0 px-0 text-white w-100 ">
+                <div class="row ">
 
                     <div class=" col-2">
-                        <img className="rounded-circle w-100 h-100 " alt="avatar" src="https://i0.wp.com/newspacephoto.org/wp-content/uploads/2019/11/Short-Online-Photography-Courses.png?resize=650%2C331&ssl=1" />
+                        <img className=" bg-white rounded-circle w-100 h-100  " alt="avatar" src={logo} />
                     </div>
 
-                    <div class="col-3 mt-4 pl-0">
+                    <div class="col mt-4 pl-0">
                         <h5 className=' ml-0 pl-0'>Subject: <span className='fs-6 text-dark'>Something</span></h5>
                         <h5 className='mt-4 ml-0 pl-0'>Description: <span className='fs-6 text-dark'>Something</span></h5>
                         <h5 className="progress mt-4 ml-0 pl-0 w-50 ">
@@ -22,13 +23,14 @@ const Header = () => {
                         </h5>
                     </div>
 
-                    <div class="col-3  mt-4 pl-0">
+                    <div class="col  mt-4 pl-0">
                         <h5 className=' ml-0 pl-0'>Attend: <span className='fs-6 text-dark'>Something</span></h5>
                         <h5 className='mt-4 ml-0 pl-0'>Tutor: <span className='fs-6 text-dark'>Something</span></h5>
-
+                        <button type="button" class="btn btn-warning bg-gradient btn-sm mt-2">Enroll</button>
                     </div>
 
-                    <div class="col-1  mt-4 ml-0 pl-0">
+                    <div class="col mt-4 ml-4 pl-4">
+                    <button type="button" className="position-absolute end-0 top-0 m-4 btn btn-dark bg-gradient btn-sm">Edit</button>
                     </div>
 
                 </div>
