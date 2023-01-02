@@ -5,10 +5,11 @@ import Footer from './Components/Main-Parts/Footer'
 import CoursePageHeader from './Components/Main-Parts/Headers/CoursePageHeader'
 import ProfessorPageHeader from './Components/Main-Parts/Headers/ProfessorProfilePageHeader';
 import StudentPageHeader from './Components/Main-Parts/Headers/StudentProfilePageHeader';
+import UniversityPageHeader from './Components/Main-Parts/Headers/UniversityProfilePageHeader';
 function App() {
   return <React.Fragment>
     <Navbar></Navbar>
-    <StudentPageHeader></StudentPageHeader>
+    <UniversityPageHeader></UniversityPageHeader>
     <Footer></Footer>
   </React.Fragment>
 }
