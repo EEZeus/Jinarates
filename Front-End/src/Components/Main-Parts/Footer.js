@@ -11,8 +11,8 @@ import {
 } from 'mdb-react-ui-kit';
 
 const Footer = () => {
-  return (<MDBFooter className='position-relative w-100 bg-dark bg-gradient text-white'>
-    <MDBContainer>
+  return (<MDBFooter className='w-100 bg-dark bg-gradient text-white'>
+    <MDBContainer >
       <MDBRow>
         <MDBCol lg="6" md="12" className=' mt-mb-0 '>
           <img src={logo} alt={'logo'} className="rounded w-6"/>
@@ -55,7 +55,6 @@ const Footer = () => {
       <MDBBtn className='bg-gradient m-1' size='sm' tag='b' color='dark' >
         <MDBIcon fab icon='linkedin-in' />
       </MDBBtn>
-
     </div>
     </MDBContainer>
   </MDBFooter>

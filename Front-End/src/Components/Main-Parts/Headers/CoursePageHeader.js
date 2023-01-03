@@ -18,7 +18,6 @@ const CoursePageHeader = () => {
                             <div class="progress-bar w-50 bg-warning bg-gradient" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
                             <span className='p-5  text-dark'>2.5</span>
                             </div>
-                            
                         </h5>
                     </div>
 

@@ -18,7 +18,7 @@ const Navbar = () => {
     const [showNavColorSecond, setShowNavColorSecond] = useState(false);
     const [showNavColorThird, setShowNavColorThird] = useState(false);
     return (
-        <MDBNavbar expand='lg' dark bgColor='dark' className='bg-gradient mt-0'>
+        <MDBNavbar expand='lg' dark bgColor='dark' className='sticky-top bg-gradient mt-0'>
             <MDBContainer fluid className='d-flex align-items-end '>
                 <img src={logo} alt={'logo'} className='w-3 rounded' />
                 <MDBNavbarToggler
