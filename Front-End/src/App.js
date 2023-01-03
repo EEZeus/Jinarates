@@ -6,11 +6,10 @@ import CoursePageHeader from './Components/Main-Parts/Headers/CoursePageHeader'
 import ProfessorPageHeader from './Components/Main-Parts/Headers/ProfessorProfilePageHeader';
 import StudentPageHeader from './Components/Main-Parts/Headers/StudentProfilePageHeader';
 import UniversityPageHeader from './Components/Main-Parts/Headers/UniversityProfilePageHeader';
+import HomePage from './Components/HomePage';
 function App() {
   return <React.Fragment>
-    <Navbar></Navbar>
-    <UniversityPageHeader></UniversityPageHeader>
-    <Footer></Footer>
+    <HomePage></HomePage>
   </React.Fragment>
 }
 
