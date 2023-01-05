@@ -11,7 +11,7 @@ import {
 } from 'mdb-react-ui-kit';
 
 const Footer = () => {
-  return (<MDBFooter className='position-relative w-100 bg-dark bg-gradient text-white'>
+  return (<MDBFooter className='position-relative w-100 bg-designed text-white'>
     <MDBContainer >
       <MDBRow>
         <MDBCol lg="6" md="12" className=' mt-mb-0 '>
@@ -22,14 +22,14 @@ const Footer = () => {
 
           <ul className='list-unstyled mb-0'>
             <li>
-              <MDBBtn color='secondary' size='sm' className="bg-gradient m-1 w-75">Help</MDBBtn>
+              <MDBBtn color='dark' size='sm' className=" m-1 w-75">Help</MDBBtn>
             </li>
             <li>
-              <MDBBtn color='secondary' size='sm' className="bg-gradient m-1 w-75">About us</MDBBtn>
+              <MDBBtn color='dark' size='sm' className=" m-1 w-75">About us</MDBBtn>
 
             </li>
             <li>
-              <MDBBtn color='secondary' size='sm' className="bg-gradient m-1 w-75">FAQ</MDBBtn>
+              <MDBBtn color='dark' size='sm' className=" m-1 w-75">FAQ</MDBBtn>
             </li>
           </ul>
         </MDBCol>
@@ -38,11 +38,11 @@ const Footer = () => {
 
           <ul className='list-unstyled'>
             <li>
-              <MDBBtn color='secondary' size='sm' className="bg-gradient m-1 w-75">Address</MDBBtn>
+              <MDBBtn color='dark' size='sm' className=" m-1 w-75">Address</MDBBtn>
 
             </li>
             <li>
-              <MDBBtn color='secondary' size='sm' className="bg-gradient m-1 w-75">Phone number</MDBBtn>
+              <MDBBtn color='dark' size='sm' className=" m-1 w-75">Phone number</MDBBtn>
 
             </li>
           </ul>

@@ -1,0 +1,12 @@
+.slide-container{
+    height:10%;
+}
+.carousel-control-next-icon::after{
+    visibility: hidden;
+}
+.carousel-control-prev-icon::after{
+    visibility: hidden;
+}
+.bg-slide-designed{
+    background-color: #FEF5EE;
+}
