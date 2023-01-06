@@ -9,7 +9,10 @@ import UniversityPageHeader from './Components/Main-Parts/Headers/UniversityProf
 import HomePage from './Components/HomePage';
 function App() {
   return <React.Fragment>
-    <HomePage></HomePage>
+    <ProfessorPageHeader></ProfessorPageHeader>
+    <CoursePageHeader></CoursePageHeader>
+    <StudentPageHeader></StudentPageHeader>
+    <UniversityPageHeader></UniversityPageHeader>
   </React.Fragment>
 }
 

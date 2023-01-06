@@ -3,8 +3,8 @@ import './CoursePageHeader.css'
 import logo from '../../../Assets/logo-black.png'
 const CoursePageHeader = () => {
     return (
-        <div class="container-md d-flex flex bg-success mw-100 mx-0 px-0  position-relative">
-            <div class="container text-left mx-0 px-0 text-white w-100 ">
+        <div class="container-md d-flex flex bg-designed-header mw-100 mx-0 px-0 mb-1  position-relative">
+            <div class="container text-left mx-0 px-0  text-white w-100 ">
                 <div class="row ">
 
                     <div class=" col-2">

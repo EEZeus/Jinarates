@@ -11,7 +11,7 @@ import {
 } from 'mdb-react-ui-kit';
 const UniversityPageHeader = () => {
     return (
-        <div class="container-md d-flex flex bg-success mw-100 mx-0 px-0  position-relative">
+        <div class="container-md d-flex flex bg-designed-header mw-100 mx-0 px-0 mb-1  position-relative">
             <div class="container text-left mx-0 px-0 text-white w-100 ">
                 <div class="row ">
 

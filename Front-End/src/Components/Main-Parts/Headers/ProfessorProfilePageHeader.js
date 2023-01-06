@@ -11,7 +11,7 @@ import {
 } from 'mdb-react-ui-kit';
 const ProfessorPageHeader = () => {
     return (
-        <div class="container-md d-flex flex bg-success mw-100 mx-0 px-0  position-relative">
+        <div class="container-md d-flex flex bg-designed-header mw-100 mx-0 px-0 mb-1 position-relative">
             <div class="container text-left mx-0 px-0 text-white w-100 ">
                 <div class="row ">
 
@@ -28,9 +28,9 @@ const ProfessorPageHeader = () => {
                         </span>
                         <h5 className='mt-2 ml-0 pl-0'>
                         University   <span>
-                            <MDBBtn className='rounded-circle shadow-0' size='sm' tag='b' color='success' >
-                            <MDBIcon far icon="plus-square" />
-                        </MDBBtn>
+                        <button type="button" class="btn shadow-0 rounded-circle">
+                            <MDBIcon far icon="plus" color='white' />
+                        </button>
                         </span> 
                         : 
                          <span className='fs-6 text-dark'>Something</span></h5>
