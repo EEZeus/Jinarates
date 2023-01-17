@@ -22,7 +22,7 @@ const StudentProfilePage = () => {
                     <div className="p-0">
                         <h5>
                             <span className='mx-1'>
-                                <MDBIcon fas icon="user-friends" color='success' />
+                                <MDBIcon fas icon="university" color='success' />
                             </span>
                             University Bookmarks
                         </h5>
@@ -47,7 +47,7 @@ const StudentProfilePage = () => {
                     <div className="p-0">
                         <h5>
                             <span className='mx-1'>
-                                <MDBIcon fas icon="book-open" color='success' />
+                                <MDBIcon fas icon="user" color='success' />
                             </span>
                             Professor Bookmarks
                         </h5>
@@ -74,7 +74,7 @@ const StudentProfilePage = () => {
                     <div className="p-0">
                         <h5>
                             <span className='mx-1'>
-                                <MDBIcon fas icon="university" color='success' />
+                                <MDBIcon fas icon="book-open" color='success' />
                             </span>
                             Course Bookmarks
                         </h5>

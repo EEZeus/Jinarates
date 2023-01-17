@@ -1,6 +1,14 @@
 import React from 'react'
 import './CoursePageHeader.css'
 import logo from '../../../Assets/logo-black.png'
+import {
+    MDBFooter,
+    MDBContainer,
+    MDBCol,
+    MDBRow,
+    MDBBtn,
+    MDBIcon
+} from 'mdb-react-ui-kit';
 const CoursePageHeader = () => {
     return (
         <div class="container-md d-flex flex bg-designed-header mw-100 mx-0 px-0 mb-1  position-relative">
@@ -14,11 +22,9 @@ const CoursePageHeader = () => {
                     <div class="col mt-4 pl-0">
                         <h5 className=' ml-0 pl-0'>Subject: <span className='fs-6 text-dark'>Something</span></h5>
                         <h5 className='mt-4 ml-0 pl-0'>Description: <span className='fs-6 text-dark'>Something</span></h5>
-                        <h5 className="progress mt-4 ml-0 pl-0 w-50 ">
-                            <div class="progress-bar w-50 bg-warning bg-gradient" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                            <span className='p-5  text-dark'>2.5</span>
-                            </div>
-                        </h5>
+                        <span>
+                            <h5>4.5<MDBIcon fas icon="star" color='warning' className='m-1' /></h5>
+                        </span>
                     </div>
 
                     <div class="col  mt-4 pl-0">
@@ -28,7 +34,7 @@ const CoursePageHeader = () => {
                     </div>
 
                     <div class="col mt-4 ml-4 pl-4">
-                    <button type="button" className="position-absolute end-0 top-0 m-1 btn btn-dark bg-gradient btn-sm">Edit</button>
+                        <button type="button" className="position-absolute end-0 top-0 m-1 btn btn-dark bg-gradient btn-sm">Edit</button>
                     </div>
 
                 </div>

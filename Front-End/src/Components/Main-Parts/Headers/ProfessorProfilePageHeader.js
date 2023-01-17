@@ -21,10 +21,8 @@ const ProfessorPageHeader = () => {
 
                     <div class="col mt-4 pl-0">
                         <h5 className=' ml-0 pl-0'>Name: <span className='fs-6 text-dark'>Something</span></h5>
-                        <span className="progress mt-1 ml-0 pl-0 w-50  ">
-                            <div class="progress-bar w-50 bg-warning bg-gradient" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                                <span className='p-5  text-dark'>2.5</span>
-                            </div>
+                        <span>
+                            <h5>4.5<MDBIcon fas icon="star" color='warning' className='m-1' /></h5>
                         </span>
                         <h5 className='mt-2 ml-0 pl-0'>
                         University   <span>

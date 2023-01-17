@@ -1,8 +1,8 @@
 import React from 'react'
-import './ProfessorProfilePage.css'
+import './UniversityProfilePage.css'
 import Navbar from './Main-Parts/NavBar'
 import Footer from './Main-Parts/Footer'
-import ProfessorProfilePageHeader from './Main-Parts/Headers/ProfessorProfilePageHeader'
+import UniversityProfilePageHeader from './Main-Parts/Headers/UniversityProfilePageHeader'
 import {
     MDBFooter,
     MDBContainer,
@@ -11,11 +11,11 @@ import {
     MDBBtn,
     MDBIcon
 } from 'mdb-react-ui-kit';
-const ProfessorProfilePage = () => {
+const UniversityProfilePage = () => {
     return (
         <React.Fragment>
             <Navbar />
-            <ProfessorProfilePageHeader />
+            <UniversityProfilePageHeader />
             <div class="d-flex flex-column mb-3 align-items-center">
                 <div class="p-2 m-2 w-100 bg-designed-content">
                     <div class="d-flex justify-content-between">
@@ -61,45 +61,43 @@ const ProfessorProfilePage = () => {
                     </div>
                     <div class="d-flex flex-column mb-3 w-100 bg-white rounded ">
                         <div class="p-2">
-                        <div class="d-flex justify-content-between">
-                        <div className="p-0">
-                            <h6 className='text-dark'>
-                                Name
-                            </h6>
-                        </div>
-                        <div class="p-0">
-                                <button type="button" class="btn shadow-0 rounded-circle">
-                                    <MDBIcon far icon="edit" color='dark' />
-                                </button>
-                        </div>
-                        </div>
+                            <div class="d-flex justify-content-between">
+                                <div className="p-0">
+                                    <h6 className='text-dark'>
+                                        Name
+                                    </h6>
+                                </div>
+                                <div class="p-0">
+                                   
+                                </div>
+                            </div>
 
                         </div>
                         <div class="p-2">
-                        <div class="d-flex justify-content-between">
-                        <div className="p-0">
-                            <h6 className='text-dark'>
-                                Description
-                            </h6>
-                        </div>
-                        <div class="p-0">
-                        <span>
-                            <h5>4.5<MDBIcon fas icon="star" color='warning' className='m-1' /></h5>
-                        </span>
-                        </div>
-                        </div>
+                            <div class="d-flex justify-content-between">
+                                <div className="p-0">
+                                    <h6 className='text-dark'>
+                                        Description
+                                    </h6>
+                                </div>
+                                <div class="p-0">
+                                    <span>
+                                        <h5>4.5<MDBIcon fas icon="star" color='warning'className='m-1' /></h5>
+                                    </span>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
                 </div>
                 <div class="p-2 m-2 w-100 bg-designed-content">
-                <div class="d-flex justify-content-between">
+                    <div class="d-flex justify-content-between">
                         <div className="p-0">
                             <h5>
                                 <span className='mx-1'>
-                                    <MDBIcon fas icon="university" color='success' />
+                                    <MDBIcon fas icon="user" color='success' />
                                 </span>
-                               Education
+                                Professors List
                             </h5>
 
                         </div>
@@ -113,42 +111,36 @@ const ProfessorProfilePage = () => {
                     </div>
                     <div class="d-flex flex-column mb-3 w-100 bg-white rounded ">
                         <div class="p-2">
-                        <div class="d-flex justify-content-between">
-                        <div className="p-0">
-                            <h6 className='text-dark'>
-                                Level
-                            </h6>
-                        </div>
-                        <div className="p-0">
-                            <h6 className='text-dark'>
-                                Date
-                            </h6>
-                        </div>
-                        <div class="p-0">
-                                <button type="button" class="btn shadow-0 rounded-circle">
-                                    <MDBIcon far icon="edit" color='dark' />
-                                </button>
-                        </div>
-                        </div>
+                            <div class="d-flex justify-content-between">
+                                <div className="p-0">
+                                    <h6 className='text-dark'>
+                                        Name
+                                    </h6>
+                                </div>
+                                <div className="p-0">
+                                    <h6 className='text-dark'>
+                                        Specialty
+                                    </h6>
+                                </div>
+                                <div class="p-0">
+                                    
+                                </div>
+                            </div>
 
                         </div>
                         <div class="p-2">
                         <div class="d-flex justify-content-between">
-                        <div className="p-0">
-                            <h6 className='text-dark'>
-                                Major
-                            </h6>
-                        </div>
-                        <div className="p-0">
-                            <h6 className='text-dark'>
-                                Organization
-                            </h6>
-                        </div>
-                        <div class="p-0">
-                        
-                        </div>
-                        </div>
-
+                                <div className="p-0">
+                                    <h6 className='text-dark'>
+                                        Email
+                                    </h6>
+                                </div>
+                                <div class="p-0">
+                                    <span>
+                                        <h5>4.5<MDBIcon fas icon="star" color='warning'className='m-1' /></h5>
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -158,4 +150,4 @@ const ProfessorProfilePage = () => {
     )
 }
 
-export default ProfessorProfilePage;
+export default UniversityProfilePage;
