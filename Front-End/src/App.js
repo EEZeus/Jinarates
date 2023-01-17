@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
 import CoursePage from './Components/CoursePage';
-import ProfessorProfilePage from './Components/ProfessorProfilePage';
+import StudentProfilePage from './Components/StudentProfilePage';
 function App() {
   return <React.Fragment>
-    <ProfessorProfilePage/>
+    <StudentProfilePage/>
   </React.Fragment>
 }
 
