@@ -7,9 +7,11 @@ import StudentProfilePage from './Components/StudentProfilePage'
 import UniversityProfilePage from './Components/UniversityProfilePage'
 import SearchPage from './Components/SearchPage'
 import SignUpPage from './Components/Authorization/SignUpPage';
+import SignInPage from './Components/Authorization/SignInPage';
+
 function App() {
   return <React.Fragment>
-    <SignUpPage/>
+    <SignInPage/>
   </React.Fragment>
 }
 
