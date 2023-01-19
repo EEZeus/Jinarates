@@ -6,9 +6,10 @@ import HomePage from './Components/HomePage'
 import StudentProfilePage from './Components/StudentProfilePage'
 import UniversityProfilePage from './Components/UniversityProfilePage'
 import SearchPage from './Components/SearchPage'
+import SignUpPage from './Components/Authorization/SignUpPage';
 function App() {
   return <React.Fragment>
-    <SearchPage/>
+    <SignUpPage/>
   </React.Fragment>
 }
 
