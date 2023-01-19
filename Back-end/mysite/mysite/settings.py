@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 """
 Django settings for mysite project.
 
@@ -122,7 +121,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-=======
+
 """
 Django settings for mysite project.
 
@@ -247,4 +246,5 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
->>>>>>> 939a12653132716ca77f9a530e2b0d3f280413d0
+
+CSRF_COOKIE_DOMAIN = None

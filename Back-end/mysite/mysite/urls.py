@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 """mysite URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -20,7 +19,7 @@ from django.urls import path
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
-=======
+
 """mysite URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -44,5 +43,3 @@ urlpatterns = [
     path('members/', include("django.contrib.auth.urls")),
     path('members/', include('members.urls'))
 ]
-
->>>>>>> 939a12653132716ca77f9a530e2b0d3f280413d0
