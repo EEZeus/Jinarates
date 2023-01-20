@@ -2,6 +2,14 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from django.contrib.auth.forms import UserCreationForm
+from rest_framework import viewsets, status
+from rest_framework.views import APIView
+from .models import UniversityProfile
+from .serializer import UniversityProfileSerializer
+
+class UniversityView(viewsets.ModelViewSet):
+    queryset = UniversityProfile.objects.all()
+    serializer_class = UniversityProfileSerializer
 
 def login_user(request):
     if request.method == "POST":

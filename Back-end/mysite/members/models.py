@@ -31,9 +31,9 @@ class Comments(models.Model):
 
 class Course(models.Model):
     name = models.CharField(max_length=150)
-    comment = models.ForeignKey(Comments, on_delete=models.CASCADE)
-    score = models.PositiveIntegerField()
-    file = models.FileField(upload_to='resourses')
+    comment = models.ForeignKey(Comments, on_delete=models.CASCADE, blank=True, null=True)
+    score = models.PositiveIntegerField(blank=True, null=True)
+    file = models.FileField(upload_to='resourses', blank=True, null=True)
 
     def __str__(self):
         return f"{self.name}"
@@ -42,9 +42,9 @@ class Course(models.Model):
         ordering = ['score', 'name']
 
 class Professor(BaseProfile):
-    score = models.IntegerField()
+    score = models.IntegerField(blank=True, null=True)
     bio = models.TextField()
-    courses = models.ForeignKey(Course, on_delete=models.CASCADE)
+    courses = models.ForeignKey(Course, on_delete=models.CASCADE, blank=True, null=True)
     resume = models.FileField(upload_to='resumes')
 
     def __str__ (self):
@@ -66,10 +66,10 @@ class StudentProfile(BaseProfile):
 class UniversityProfile(models.Model):
     name = models.CharField(max_length=150)
     address = models.TextField()
-    score = models.PositiveIntegerField()
-    comments = models.ForeignKey(Comments, on_delete=models.CASCADE)
-    courses = models.ForeignKey(Course, on_delete=models.CASCADE)
-    professors = models.ForeignKey(Professor, on_delete=models.CASCADE)
+    score = models.PositiveIntegerField(default=0)
+    comments = models.ForeignKey(Comments, on_delete=models.CASCADE, default=None, blank=True, null=True)
+    courses = models.ForeignKey(Course, on_delete=models.CASCADE, default=None, blank=True, null=True)
+    professors = models.ForeignKey(Professor, on_delete=models.CASCADE, default=None, blank=True, null=True)
     
     def __str__(self):
         return f"{self.name}"
