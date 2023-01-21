@@ -6,6 +6,7 @@ from django.conf import settings
 # Create your models here.
 class User(AbstractUser):
     email = models.EmailField(unique=True)
+    university = models.CharField(max_length=160)
 
 class BaseProfile(models.Model):
     birthday = models.DateField()
@@ -55,8 +56,7 @@ class Professor(BaseProfile):
 
 class StudentProfile(BaseProfile):
     enrolled = models.ForeignKey(Course, on_delete=models.CASCADE)
-    university = models.CharField(max_length=100)
-
+  
     def __str__(self):
         return f"{self.user.first_name} - {self.user.last_name}"
 
