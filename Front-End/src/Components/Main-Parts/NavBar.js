@@ -13,6 +13,7 @@ import {
     MDBCollapse,
     MDBBtn
 } from 'mdb-react-ui-kit';
+import { Link } from 'react-router-dom'
 const Navbar = () => {
     const [showNavColor, setShowNavColor] = useState(false);
     const [showNavColorSecond, setShowNavColorSecond] = useState(false);
@@ -34,15 +35,19 @@ const Navbar = () => {
                 <MDBCollapse show={showNavColorSecond} navbar id='navbarColor02'>
                     <MDBNavbarNav className='me-auto mb-lg-0 position-relative'>
                         <MDBNavbarItem className='active mb-4 '>
-                            <MDBNavbarLink aria-current='page' href='#' >
+                            <MDBNavbarLink>
                                 <MDBIcon fas icon="home" color='success' className='mx-1' />
-                                <span className='text-white'>Home</span>
+                                <Link className='text-decoration-none' to='/Homepage'>
+                                    <span className='text-white'>Home</span>
+                                </Link>
                             </MDBNavbarLink>
                         </MDBNavbarItem>
                         <MDBNavbarItem className=' mb-4 '>
-                            <MDBNavbarLink href='#'>
+                            <MDBNavbarLink >
                                 <MDBIcon fas icon="search" color='success' className='mx-1' />
-                                <span className='text-white'>Explore</span>
+                                <Link className='text-decoration-none' to='/explore'>
+                                    <span className='text-white'>Explore</span>
+                                </Link>
                             </MDBNavbarLink>
                         </MDBNavbarItem>
                         <MDBNavbarItem className=' mb-4 '>
@@ -54,16 +59,20 @@ const Navbar = () => {
                         <div className='position-absolute bottom-0 end-0 mb-0'>
                             <MDBBtn href='#' tag='a' color='transparent' className='shadow-0 mb-0'>
                                 <div className='position-relative'>
-                                <MDBIcon far icon="envelope" color='success' />
-                                <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle"></span>
+                                    <MDBIcon far icon="envelope" color='success' />
+                                    <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle"></span>
                                 </div>
                             </MDBBtn>
-                            <MDBBtn href='#' tag='a' color='transparent' className='shadow-0 mb-0'>
+                            <Link to= '/'>
+                            <MDBBtn tag='a' color='transparent' className='shadow-0 mb-0'>
                                 <MDBIcon fas icon="sign-in-alt" color='success' />
                             </MDBBtn>
-                            <MDBBtn href='#' tag='a' color='transparent' className='rounded-circle shadow-0 mb-4'>
+                            </Link>
+                            <Link to= '/profile-p'>
+                            <MDBBtn tag='a' color='transparent' className='rounded-circle shadow-0 mb-4'>
                                 <img className="rounded-circle w-3 mb-0" alt="avatar" src="https://mdbcdn.b-cdn.net/img/new/avatars/1.webp" />
                             </MDBBtn>
+                            </Link>
                         </div>
                     </MDBNavbarNav>
                 </MDBCollapse>
