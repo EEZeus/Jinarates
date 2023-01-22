@@ -23,14 +23,14 @@ const ProfessorProfilePage = () => {
                         </div>
                         <div class="modal-body">
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1" />
+                                <input type="text" class="form-control" placeholder="Name" aria-label="Name" described="basic-addon1" />
                             </div>
 
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Content (Comma Separated)" aria-label="Content (Comma Separated)" aria-describedby="basic-addon2" />
+                                <input type="text" class="form-control" placeholder="Content (Comma Separated)" aria-label="Content (Comma Separated)" described="basic-addon2" />
                             </div>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" id="requirement" placeholder="Requirements" aria-label="Requirements" aria-describedby="basic-addon3" />
+                                <input type="text" class="form-control" id="requirement" placeholder="Requirements" aria-label="Requirements" described="basic-addon3" />
                             </div>
 
                             <div class="input-group mb-3">
@@ -38,7 +38,7 @@ const ProfessorProfilePage = () => {
                                 <textarea class="form-control" aria-label="With textarea"></textarea>
                             </div>
                             <div class="input-group mb-3">
-                            <input type="file" multiple name="files[]" class="form-control" id="ResourceUpload" aria-describedby="resource-upload" aria-label="Upload"/>
+                            <input type="file" multiple name="files[]" class="form-control" id="ResourceUpload" described="resource-upload" aria-label="Upload"/>
                         </div>
                         </div>
                        
