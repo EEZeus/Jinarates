@@ -2,6 +2,27 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from django.contrib.auth.forms import UserCreationForm
+from rest_framework import viewsets, status
+from rest_framework.views import APIView
+from .models import *
+from .serializer import *
+
+class UniversityView(viewsets.ModelViewSet):
+    queryset = UniversityProfile.objects.all()
+    serializer_class = UniversityProfileSerializer
+
+class CourseView(viewsets.ModelViewSet):
+    queryset = Course.objects.all()
+    serializer_class = CourseSerializer
+
+class StudentView(viewsets.ModelViewSet):
+    queryset = StudentProfile.objects.all()
+    serializer_class = StudentSerializer
+
+class ProfessorView(viewsets.ModelViewSet):
+    queryset = Professor.objects.all()
+    serializer_class = ProfessorSerializer
+
 
 def login_user(request):
     if request.method == "POST":
