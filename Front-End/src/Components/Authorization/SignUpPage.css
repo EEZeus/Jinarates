@@ -1,0 +1,19 @@
+.bg-designed-signup{
+    background-image: url(../../Assets/signup-signin-bg.png);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+}
+.align-right-custom{
+    margin-left: auto!important;
+    margin-right: 6em!important;
+}
+.w-40{
+    width: 40%;
+}
+.bg-form-design{
+    background-color: #f5f5f5!important;
+}
+.bg-username-design{
+    background-color: #DADADA!important;
+}
