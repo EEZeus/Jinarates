@@ -10,7 +10,7 @@ class User(AbstractUser):
 
 class BaseProfile(models.Model):
     birthday = models.DateField()
-    profile_pic = models.ImageField(upload_to='images')
+    profile_pic = models.ImageField(upload_to='images', blank=True, null=True)
     user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, default=None)
 
 
